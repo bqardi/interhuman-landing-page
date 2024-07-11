@@ -1,9 +1,10 @@
 {
-  "name": "tailwind-mix-template",
+  "name": "interhuman-ai-landing-page",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "mix",
     "dev": "mix watch"
   },
   "keywords": [],
