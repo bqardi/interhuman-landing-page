@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Poppins, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :root {
+    --color-background: var(--purple);
+    --color-foreground: var(--purple-dark);
+    --color-button-background: var(--purple-button-dark);
+    --color-button-foreground: var(--purple-button);
+
+    --purple: #d5c3fd;
+    --purple-dark: #2b252d;
+    --purple-button: pink;
+    --purple-button-dark: purple;
+
+    --pink: #edb1d6;
+    --pink-dark: #161616;
+    --pink-button: pink;
+    --pink-button-dark: purple;
+
+    --green: #bacec0;
+    --green-dark: #534d41;
+    --green-button: #bacec0;
+    --green-button-dark: #534d41;
+
+    --dark-green: #292e1e;
+    --dark-green-dark: #edb1d6;
+    --dark-green-button: #edb1d6;
+    --dark-green-button-dark: #292e1e;
+
+    --black: #161616;
+    --black-dark: #edb1d6;
+    --black-button: #161616;
+    --black-button-dark: pink;
+  }
+}
+
+.color-transition {
+  @apply transition-colors duration-500;
+}

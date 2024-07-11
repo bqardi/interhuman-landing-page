@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interhuman AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./build/style.css" />
+  </head>
+  <body class="color-transition bg-background text-foreground">
+    <header class="h-28 mb-12 px-8" data-color="purple">
+      <div class="max-w-52 flex items-center h-full">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 677.89 91.12"
+          clasS="w-full"
+          fill="currentColor"
+        >
+          <g>
+            <path
+              fill="currentColor"
+              d="M127.53,83.05V6.34h14.33v76.71h-14.33Z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M165.29,26.55v56.54h-13.65V26.55h13.65ZM201.56,45.42v37.67h-13.65v-36.46c0-4.82-4.25-9.42-11.31-9.42-6.52,0-11.31,4.6-11.31,9.42,0-11.71,3.87-20.17,12.66-21.31,9.68-1.25,23.6,5.87,23.6,20.09Z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M237.69,26.52v10.65h-29.7c2.92.02,20.11.48,20.11,8.56v21.02c0,2.35,1.98,4.31,4.2,4.31h5.38v12.03h-9.33c-7.6,0-13.9-6.17-13.9-13.9v-24.42c0-7.59-6.88-7.59-6.88-7.59h-1.35v-10.65h8.24V6.38h13.65v20.15h9.59Z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M296.95,58.53h-41.9c1.35,9.26,7.62,13.69,14.06,13.78,4.29-.06,8.51-2.04,11.25-6.11h14.9c-4.16,11.6-14.64,18.05-26.14,18.14-14.87-.12-28.04-10.79-28.04-29.63s13.47-29.63,28.04-29.63,28.04,10.85,28.04,29.63c0,1.31-.07,2.59-.19,3.82ZM282.73,48.15c-2.8-7.25-7.77-10.95-13.62-11.04-5.85.09-10.84,3.76-13.63,11.04h27.25Z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M337.03,26.54v12.65s-2.62-1.3-7.52-1.3c-7.88,0-11.99,4.33-11.99,10.23v34.97h-13.65V26.52h13.65v20.92c0-14.14,6.09-22.25,11.99-22.25,2.64,0,5.18.48,7.52,1.35Z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M355.55,6.38v76.71h-13.65V6.38h13.65ZM355.55,50.11c0-.13,0-.25,0-.37,0,.12,0,.25,0,.37ZM391.82,45.51v37.58h-13.65v-32.98c0-6.98-2.81-13.34-11.31-13.34-7.84,0-11.2,5.46-11.31,12.97.12-15.2,7.25-23.79,15.54-24.48,9.83-.81,20.72,7.14,20.72,20.25Z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M435.47,61.49c0,10.73-1.9,21.52-12.25,22.72-15.61,1.81-23.34-10.08-23.34-20.02V26.52h13.65v37.67c0,4.82,4.25,8.2,11.31,8.2s10.63-5.01,10.63-10.91ZM449.12,26.52v56.54h-13.65V26.52h13.65Z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M472.16,26.52v56.57h-13.65V26.52h13.65ZM539.29,44.73v38.36h-13.65v-37.67c0-4.82-5.14-8.2-9.96-8.2s-9.96,2.66-9.96,8.2v37.67h-13.65v-37.67c0-5.54-5.14-8.2-9.96-8.2s-9.96,3.38-9.96,8.2c0-13.97,6.37-19.28,12.8-20.15,6.79-.65,13.57,3.35,16.78,9.7,2.35-5.68,10.31-9.77,16.78-9.77,12.52,0,20.76,8.26,20.76,19.54Z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M594.56,41.07v41.91h-13.65v-40.53c0,11.68-3.76,14.46-8.96,14.46h-3.1c-3.58,0-9.14,1.06-9.77,6.92-.52,4.77,3.42,9.09,9.77,9.09s12.06-4.32,12.06-9.14c0,13.15-5.35,20.26-14.43,20.54-13.84.44-21.05-9.61-21.05-18.69,0-11.53,9.59-18.7,21.18-18.7h8.52c3.44,0,5.91-1.99,5.76-4.48-.27-4.24-3.77-6.45-9.55-6.45-3.78,0-7.39,2.31-8.6,5.15h-13.67c2.53-11.74,12.64-16.07,22.27-16.07s23.21,4.96,23.21,15.99Z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M617.16,26.55v56.54h-13.65V26.55h13.65ZM653.43,45.42v37.67h-13.65v-36.46c0-4.82-4.25-9.42-11.31-9.42-6.52,0-11.31,4.6-11.31,9.42,0-11.71,3.87-20.17,12.66-21.31,9.68-1.25,23.6,5.87,23.6,20.09Z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M676.7,29.44c0,2.5-.97,4.84-2.74,6.61-1.76,1.77-4.11,2.74-6.61,2.74s-4.84-.97-6.61-2.74c-1.76-1.77-2.74-4.11-2.74-6.61s.97-4.84,2.74-6.61c1.77-1.77,4.11-2.74,6.61-2.74s4.84.97,6.61,2.74c1.77,1.77,2.74,4.11,2.74,6.61ZM675.09,29.44c0-2.07-.8-4.01-2.27-5.47-1.46-1.46-3.4-2.27-5.47-2.27s-4.01.8-5.47,2.27c-1.46,1.46-2.27,3.4-2.27,5.47s.8,4.01,2.27,5.47c1.46,1.46,3.4,2.27,5.47,2.27s4.01-.8,5.47-2.27c1.46-1.46,2.27-3.4,2.27-5.47ZM669.21,30.59l2.69,3.85h-2.24l-2.69-3.85h-1.59s0,3.85,0,3.85h-1.92v-10.26h5.23c1.75,0,3.28,1.46,3.28,3.15,0,1.8-1.25,3.24-2.76,3.26ZM670.06,27.4c0-.76-.6-1.61-1.37-1.61h-3.31v3.19h3.11c1.05,0,1.57-.79,1.57-1.58Z"
+            ></path>
+          </g>
+          <g>
+            <path
+              fill="currentColor"
+              d="M39.33,91.12l-.25-5.43c-.13-2.72-.68-16.54.9-21.99,1.55-5.33,5.64-9.51,10.44-10.66,2.5-.6,7.37-.86,11.99,4.08l23.32,26.15-8.12,7.24-23.23-26.06c-.21-.22-.96-.95-1.44-.84-.82.2-2.06,1.52-2.52,3.11-.72,2.46-.81,11.49-.48,18.44l.25,5.43-10.86.51Z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M8.03,87.91l-7.24-8.12,26.06-23.23c.22-.21.95-.96.84-1.44-.2-.82-1.52-2.06-3.11-2.52-2.46-.71-11.49-.81-18.44-.48l-5.43.26-.51-10.86,5.43-.26c2.72-.13,16.54-.68,21.98.9,5.33,1.55,9.51,5.65,10.66,10.44.6,2.5.86,7.37-4.08,11.99l-26.16,23.32Z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M29.46,36.93L6.14,10.78,14.25,3.54l23.23,26.06c.21.22.96.95,1.43.84.82-.2,2.06-1.53,2.52-3.11.71-2.46.81-11.49.48-18.44l-.25-5.43,10.86-.51.25,5.43c.13,2.72.68,16.53-.9,21.98-1.55,5.33-5.64,9.51-10.44,10.66-2.49.6-7.37.86-11.99-4.08Z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M56.69,47.2c-1.51-1.68-2.59-3.64-3.09-5.74-.6-2.49-.86-7.37,4.08-11.99l26.15-23.32,7.24,8.12-26.06,23.23c-.22.21-.95.96-.84,1.43.2.83,1.53,2.07,3.11,2.52,2.46.71,11.49.81,18.44.48l5.43-.25.51,10.86-5.43.25c-2.72.13-16.53.68-21.98-.9-3-.87-5.63-2.55-7.56-4.7Z"
+            ></path>
+          </g>
+        </svg>
+      </div>
+    </header>
+
+    <main>
+      <div class="max-w-page mx-auto px-5 sm:px-8 mb-20">
+        <h1 class="text-5xl md:text-8xl font-semibold max-w-[1000px]">
+          Inter&shy;human is an AI research and products studio.
+        </h1>
+      </div>
+      <div class="max-w-page mx-auto px-5 sm:px-8 mb-28">
+        <span class="text-lg block">Backed by</span>
+        <svg
+          class="w-32 color-transition bg-background text-foreground"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          viewBox="0 0 1952 470"
+          fill="currentColor"
+        >
+          <path
+            d="M0,235v235h467V0H0v235ZM869,124v22h83v221h48v-221h83v-44h-214v22ZM1169,234.5v132.5h185v-44h-138V102h-47v132.5ZM1439,234.5v132.5h196v-43h-154v-69h118v-43h-118v-67h154v-43h-196v132.5ZM1728,234.5v132.5h47v-92h28.8c0,0,28.8.1,28.8.1l32.1,45.7,32.1,45.7,27.8.3c22.3.2,27.7,0,27.3-1-.3-.7-15.1-21.8-32.9-46.8-17.8-25-33.4-46.9-34.7-48.7-2.1-3.1-2.2-3.3-.5-3.9,5.5-1.9,18.2-7.7,23.1-10.5,3.1-1.8,9.8-7.4,14.8-12.4,7.4-7.3,9.9-10.6,13.3-17.5,6.6-13.5,8.4-21.8,8.4-39.5s-1.8-26-8.2-39c-12.5-25.3-38.3-40.8-74.1-44.5-5.8-.6-36.2-1-71.5-1h-61.4v132.5ZM311.2,233.5c31.2,71.5,56.9,130.6,57.2,131.2.4,1-4.6,1.2-23.2,1.2h-23.7s-43.9-103.8-43.9-103.8c-24.2-57.1-44.2-104.1-44.6-104.5-.4-.4-20.6,46.3-45,103.7l-44.3,104.5h-45.6l1.4-3.2c3.5-8.3,111.8-256.4,112.7-258,.9-1.6,2.6-1.8,21.7-1.5l20.7.3,56.7,130ZM554,235v132h46l.3-92.4.3-92.4,71.5,92.4,71.5,92.4h20.2s20.2,0,20.2,0V103h-47l-.3,90-.3,90-69.5-90-69.5-90h-21.8c0,0-21.8-.1-21.8-.1v132ZM1860,147.4c14.4,3.1,26.4,11.5,31.5,22.1,10,21.2,2.2,45.4-18,56.2-12,6.4-13.9,6.6-58.2,7.1l-40.2.4v-87.1h39.2c29.5,0,40.9.4,45.8,1.4Z"
+          />
+        </svg>
+      </div>
+      <div
+        class="relative max-w-page mx-auto px-5 sm:px-8 mb-28 grid lg:grid-cols-2 gap-4"
+        data-color="black"
+      >
+        <video
+          autoplay
+          loop
+          style="
+            background-image: url('https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19%2F6650847cbc601b363c664711_emotion-aware-ai-compressed-poster-00001.jpg');
+          "
+          muted
+          playsinline
+          class="object-cover w-full h-full aspect-video lg:aspect-[750/840]"
+          aria-describedby="capture-human-emotions"
+        >
+          <source
+            src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19%2F6650847cbc601b363c664711_emotion-aware-ai-compressed-transcode.mp4"
+          />
+          <source
+            src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19%2F6650847cbc601b363c664711_emotion-aware-ai-compressed-transcode.webm"
+          />
+        </video>
+        <p id="capture-human-emotions" class="sr-only">
+          This video, which contains no audio, showcases an AI's ability to
+          analyze and interpret human emotions through facial expressions. A
+          woman demonstrates various emotions, highlighted and described by
+          on-screen descriptions, illustrating the app's feedback mechanism.
+        </p>
+        <div
+          class="color-transition bg-foreground text-background p-5 sm:p-10 flex flex-col justify-between gap-4"
+        >
+          <h2 class="text-3xl md:text-6xl font-medium">Social-Aware AI</h2>
+          <p class="leading-8 max-w-96 text-xl">
+            Our technology interprets body language, facial expressions, and
+            tone of voice in real time. By combining this with contextual
+            awareness, we enable more natural and relevant conversations with
+            users.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one.jpg"
+          srcset="
+            https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one-p-500.jpg   500w,
+            https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one-p-800.jpg   800w,
+            https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one-p-1080.jpg 1080w,
+            https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one-p-1600.jpg 1600w,
+            https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one-p-2000.jpg 2000w,
+            https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one.jpg        2166w
+          "
+          sizes="(max-width: 479px) 201.25px, (max-width: 767px) 45vw, (max-width: 991px) 46vw, 47vw"
+          loading="lazy"
+          alt="A person holding a phone with a chat interface on the screen"
+          class="object-cover w-full h-full aspect-square lg:aspect-[750/840] lg:order-1"
+        />
+        <div
+          class="color-transition bg-foreground text-background p-5 sm:p-10 flex flex-col justify-between gap-4"
+        >
+          <h2 class="text-3xl md:text-6xl font-medium">
+            First product launching soon.
+          </h2>
+          <div>
+            <p class="leading-8 max-w-96 text-xl mb-5">
+              Our first product is designed to assist professionals with
+              communication issues in the workplace.
+            </p>
+            <p class="leading-8 max-w-96 text-xl mb-8">
+              The app provides personalized paths for discovery and learning and
+              real-time actionable insights on improving communication with
+              others. We help you prepare for difficult situations before you
+              face them in the real world. Available anywhere at any time,
+              providing a private safe space.
+            </p>
+            <a
+              class="flex items-center max-w-max gap-1 text-base md:text-lg whitespace-nowrap bg-button-foreground text-button-background rounded-full px-12 md:px-16 py-4 hover:scale-95 transition-all duration-500"
+              href="#footer-cta"
+            >
+              Get updated
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 mb-20" data-color="green">
+        <h2 class="text-5xl md:text-8xl font-semibold text-center mb-20">
+          AI that deepens human under&shy;standing.
+        </h2>
+        <div class="grid lg:grid-cols-2 gap-20 text-3xl leading-[3.5rem]">
+          <p>
+            <strong>Social-Aware AI</strong> — We focus on developing AI that
+            deeply understands human social signals and emotions, by combining
+            research and insights from psychology, neuroscience, and computer
+            science to create AI that models human interactions.
+          </p>
+          <p>
+            <strong>Helping people understand each other</strong> — By
+            continuously integrating real-world feedback, we refine our AI to be
+            more empathetic and context-aware, ultimately enhancing the quality
+            of human relationships.
+          </p>
+        </div>
+      </div>
+      <div class="px-5 sm:px-8 mb-20">
+        <div
+          class="color-transition bg-foreground text-background p-2 sm:p-5 grid gap-10 lg:grid-cols-2"
+        >
+          <div class="p-5 sm:p-10 flex flex-col justify-between">
+            <h2 class="text-5xl md:text-8xl font-semibold mb-10">
+              Why Social-Aware AI?
+            </h2>
+            <p class="text-2xl max-w-96 leading-[2.5rem]">
+              A few words from our CEO, Paula Petcu on why we're focusing on
+              developing AI that understands human social signals and emotions.
+            </p>
+          </div>
+          <div class="relative">
+            <video
+              autoplay
+              loop
+              style="
+                background-image: url('https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19%2F6657027368245c0baacf159d_0529-poster-00001.jpg');
+              "
+              muted
+              playsinline
+              class="object-cover w-full h-full aspect-video"
+              aria-describedby="paula-petcu-video"
+            >
+              <source
+                src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19%2F6657027368245c0baacf159d_0529-transcode.mp4"
+              />
+              <source
+                src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19%2F6657027368245c0baacf159d_0529-transcode.webm"
+              />
+            </video>
+            <p id="paula-petcu-video" class="sr-only">
+              This short looping example video, which contains no audio,
+              features Paula Petcu, the CEO of Interhuman AI, discussing the
+              importance of developing AI that understands human social signals
+              and emotions.
+            </p>
+            <button
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 p-2.5 rounded-full bg-button-foreground text-button-background hover:scale-110 duration-500"
+              aria-label="Play video of Paula Petcu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-page mx-auto px-5 sm:px-8 mb-32"
+        data-color="dark-green"
+      >
+        <h2 class="text-4xl md:text-6xl font-semibold mb-20 max-w-96">
+          Our Technology
+        </h2>
+        <ul>
+          <li
+            class="[&.active]:opacity-100 opacity-0 translate-y-10 [&.active]:translate-y-0 transition-all duration-700 grid lg:grid-cols-[1fr_4fr_7fr] gap-5 md:gap-10 border-t border-green-dark py-10"
+            data-slide-in
+          >
+            <span
+              ><span
+                class="cursor-default inline-block aspect-square text-8xl hover:rotate-180 transition-transform duration-1000"
+                >⁂</span
+              ></span
+            >
+            <h3 class="mt-5 text-3xl md:text-4xl">
+              Social signal interpretation
+            </h3>
+            <p class="md:text-2xl">
+              Our AI interprets body language, facial expressions, and tone of
+              voice in real time, enabling more natural and empathetic
+              conversations.
+            </p>
+          </li>
+          <li
+            class="[&.active]:opacity-100 opacity-0 translate-y-10 [&.active]:translate-y-0 transition-all duration-700 grid lg:grid-cols-[1fr_4fr_7fr] gap-5 md:gap-10 border-t border-green-dark py-10"
+            data-slide-in
+          >
+            <span>
+              <span
+                class="cursor-default inline-block aspect-square text-8xl hover:rotate-180 transition-transform duration-1000"
+                >✦</span
+              ></span
+            >
+            <h3 class="mt-5 text-3xl md:text-4xl">Emotional intelligence</h3>
+            <p class="md:text-2xl">
+              Our technology recognizes and responds to human emotions,
+              fostering deeper connections and more meaningful communications.
+            </p>
+          </li>
+          <li
+            class="[&.active]:opacity-100 opacity-0 translate-y-10 [&.active]:translate-y-0 transition-all duration-700 grid lg:grid-cols-[1fr_4fr_7fr] gap-5 md:gap-10 border-t border-green-dark py-10"
+            data-slide-in
+          >
+            <span>
+              <span
+                class="cursor-default inline-block aspect-square text-8xl hover:rotate-180 transition-transform duration-1000"
+                >✲</span
+              ></span
+            >
+            <h3 class="mt-5 text-3xl md:text-4xl">Contextual awareness</h3>
+            <p class="md:text-2xl">
+              By considering the context of interactions, our AI adapts its
+              responses to fit situational nuances and individual user needs.
+            </p>
+          </li>
+          <li
+            class="[&.active]:opacity-100 opacity-0 translate-y-10 [&.active]:translate-y-0 transition-all duration-700 grid lg:grid-cols-[1fr_4fr_7fr] gap-5 md:gap-10 border-t border-green-dark py-10"
+            data-slide-in
+          >
+            <span>
+              <span
+                class="cursor-default inline-block aspect-square text-8xl hover:scale-125 transition-transform duration-1000"
+                >☉</span
+              ></span
+            >
+            <h3 class="mt-5 text-3xl md:text-4xl">Ethical design</h3>
+            <p class="md:text-2xl">
+              We prioritize privacy, security, and inclusivity, working towards
+              AI that is fair, transparent, and beneficial for all users.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="max-w-page mx-auto px-5 sm:px-8 mb-32" data-color="black">
+        <h2 class="text-4xl md:text-6xl font-semibold mb-20 max-w-96">
+          Research
+        </h2>
+        <ul>
+          <li
+            class="grid lg:grid-cols-[1fr_2fr_2fr] place-items-start gap-5 md:gap-10 border-t border-green-dark py-10"
+          >
+            <h3 class="text-xl md:text-lg">
+              Interpretability by design using computer vision for behavioral
+              sensing in child and adolescent psychiatry
+            </h3>
+            <p class="md:text-sm">
+              Using computer vision for behavioral sensing in child and
+              adolescent psychiatry, this study assesses the accuracy of
+              ML-derived behavioral codes from clinical interview videos,
+              comparing them with human expert ratings to improve reliability
+              and scalability in psychiatric diagnostics.
+            </p>
+            <a
+              class="flex items-center max-w-max ml-auto gap-1 text-base md:text-lg whitespace-nowrap bg-button-background text-button-foreground rounded-full px-12 md:px-16 py-4 hover:scale-95 transition-all duration-500"
+              href="https://backend.orbit.dtu.dk/ws/portalfiles/portal/281060105/2207.04724_1.pdf"
+              target="_blank"
+            >
+              Read publication (PDF)
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li
+            class="grid lg:grid-cols-[1fr_2fr_2fr] place-items-start gap-5 md:gap-10 border-t border-green-dark py-10"
+          >
+            <h3 class="text-xl md:text-lg">
+              Beyond Accuracy: Fairness, Scalability, and Uncertainty
+              Considerations in Facial Emotion Recognition
+            </h3>
+            <p class="md:text-sm">
+              The study examines the current state of FER models, highlighting
+              issues of fairness, scalability, and robustness. The study
+              proposes metrics and algorithms to assess and improve these
+              aspects, emphasizing the importance of fair and reliable FER
+              models in clinical applications and beyond.
+            </p>
+            <a
+              class="flex items-center max-w-max ml-auto gap-1 text-base md:text-lg whitespace-nowrap bg-button-background text-button-foreground rounded-full px-12 md:px-16 py-4 hover:scale-95 transition-all duration-500"
+              href="https://orbit.dtu.dk/en/publications/beyond-accuracy-fairness-scalability-and-uncertainty-consideratio"
+              target="_blank"
+            >
+              Read publication
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li
+            class="grid lg:grid-cols-[1fr_2fr_2fr] place-items-start gap-5 md:gap-10 border-t border-green-dark py-10"
+          >
+            <h3 class="text-xl md:text-lg">
+              Scaling-up Behavioral Observation with Computational Behavior
+              Recognition
+            </h3>
+            <p class="md:text-sm">
+              The study proposes using open-source AI tools to automate
+              behavioral coding in parent-child interactions and therapy
+              sessions. This method enhances scalability, consistency, and depth
+              of analysis, addressing traditional human coding limitations. The
+              study discusses privacy, bias, and validation methods,
+              highlighting the potential for these tools in psychological
+              research and clinical practice.
+            </p>
+            <a
+              class="flex items-center max-w-max ml-auto gap-1 text-base md:text-lg whitespace-nowrap bg-button-background text-button-foreground rounded-full px-12 md:px-16 py-4 hover:scale-95 transition-all duration-500"
+              href="https://osf.io/preprints/psyarxiv/m4p6f"
+              target="_blank"
+            >
+              Read publication
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="relative">
+      <aside data-canvas-container class="w-full h-[748px]"></aside>
+      <div class="absolute top-0 z-10 inset-x-0 pt-10 pointer-events-none">
+        <div class="overflow-x-hidden flex max-w-max mx-auto">
+          <div
+            class="animate-carousel flex gap-20 px-10"
+            data-logo-carousel-content
+          ></div>
+        </div>
+        <div id="footer-cta" class="px-10">
+          <p class="mb-5 max-w-80">
+            Get updates on our progress and upcoming products
+          </p>
+          <form class="relative pointer-events-auto md:max-w-96">
+            <input
+              class="border border-gray-700 bg-background text-foreground placeholder:text-foreground rounded-md pl-4 pr-14 py-3.5 w-full"
+              type="email"
+              maxlength="256"
+              name="email"
+              placeholder="Enter your email"
+              id="email"
+              required=""
+              aria-label="Submit email address"
+            />
+            <button
+              class="absolute top-1/2 -translate-y-1/2 right-1 rounded-full hover:brightness-125 w-12 h-12 grid place-content-center"
+              aria-label="Submit email address"
+            >
+              <svg
+                class="w-6 h-6 pointer-events-none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
+                ></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-0 z-10 inset-x-0 text-foreground grayscale flex items-center justify-between flex-col md:flex-row px-10 h-32 mb-12"
+      >
+        <div class="flex gap-3 md:order-1">
+          <a
+            class="hover:text-white transition-colors duration-500"
+            href="https://www.instagram.com/interhuman.ai/"
+            >Instagram</a
+          >
+          <a
+            class="hover:text-white transition-colors duration-500"
+            href="https://linkedin.com/company/interhuman-ai"
+            >Linkedin</a
+          >
+        </div>
+        <small class="text-base">© Interhuman AI 2024 </small>
+      </div>
+    </footer>
+
+    <div
+      class="fixed z-20 inset-0 pointer-events-none flex"
+      data-animated-startup
+    ></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="./build/app.js"></script>
+  </body>
+</html>
